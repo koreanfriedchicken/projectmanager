@@ -1,6 +1,12 @@
+import Grid from "../components/Grid"
+
+import './Home.css'
+
 const Home = () => {
   return (
-    <div>Home</div>
+    <div className='home'>
+      <Grid />
+    </div>
   )
 }
 

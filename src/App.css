@@ -13,6 +13,11 @@
   place-items: center;
 }
 
+.link{
+  text-decoration: none;
+  color: black;
+}
+
 .dashboard{
   width: 1280px;
   height: 720px;

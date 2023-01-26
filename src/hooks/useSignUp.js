@@ -11,7 +11,7 @@ function useSignUp() {
 
     const { dispatch } = useAuthContext()
 
-    async function signup (email, password, displayName, icon){
+    async function signup (email, password, displayName){
         setError(null)
         const res = await createUserWithEmailAndPassword(auth, email, password)
         
@@ -21,10 +21,9 @@ function useSignUp() {
 
         await updateProfile(res.user, {displayName})
 
-        await setDoc(doc(db, 'users', res.user.uid), {name:res.user.displayName, icon})
+        await setDoc(doc(db, 'users', res.user.uid), {name:res.user.displayName})
 
         dispatch({ type: 'LOGIN', payload: res.user})
-        dispatch({ type: 'ICON', payload: icon})
     }
     return{error, signup}
 }

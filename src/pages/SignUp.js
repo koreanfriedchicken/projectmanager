@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 import useSignUp from '../hooks/useSignUp'
 
@@ -107,6 +108,7 @@ const SignUp = () => {
         {error && <p>{error}</p>}
         <button className='submit' type='submit'>Submit</button>
       </form>
+      <Link to='/signin' className='signin_alt'>Or sign in here instead</Link>
     </div>
   )
 }

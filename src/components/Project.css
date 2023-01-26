@@ -1,0 +1,96 @@
+.grid_card{
+  width: 500px;
+  height: 600px;
+  background-color: white;
+  margin: 20px;
+  border-radius: 12px;
+  padding: 30px;
+  overflow-y: scroll;
+  box-shadow: -20px 20px 25px -25px rgba(0,0,0,0.50);
+  position: relative;
+}
+
+.grid_card_delete{
+  position: absolute;
+  top: 3px;
+  right: 5px;
+  background-color: burlywood;
+  color: white;
+  padding: 5px;
+  font-size: 12px;
+  border-radius: 500px;
+  cursor: pointer;
+}
+
+.grid_card_header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.grid_card_category{
+  
+}
+
+.grid_card_createdate{
+  color: grey;
+}
+
+.grid_card_title{
+  margin: 10px 0;
+  font-size: 24px;
+}
+
+.grid_card_image{
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.grid_card_membersheader{
+  font-weight: bold;
+}
+
+.grid_card_member{
+  margin-right: 5px;
+  color: #6495ed;
+}
+
+.grid_card_commentsheader{
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.grid_comment{
+  margin-left: 20px;
+}
+
+.grid_comment_form{
+  display: flex;
+  flex-direction: column;
+}
+
+.grid_textarea_header{
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.grid_comment_textarea{
+  width: 100%;
+  resize: none;
+  margin-top: 10px;
+  height: 50px;
+}
+
+.grid_submit{
+  margin-top: 10px;
+  height: 50px;
+  background-color: darkseagreen;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.comment_name{
+  color: #6495ed;
+}

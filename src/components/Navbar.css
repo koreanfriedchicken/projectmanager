@@ -1,4 +1,48 @@
 .navbar{
-  height: 50px;
+
+}
+
+.navbar_top{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 50px;
   background-color: beige;
+  height: 70px;
+  align-items: center;
+  border-radius: 0 20px 0 0;
+
+}
+
+.navbar_left{
+  display: flex;
+}
+
+.navbar_left > input{
+  margin-left: 25px;
+}
+
+.navbar_right{
+  display: flex;
+  align-items: center;
+}
+
+.navbar_user{
+
+}
+
+.navbar_date{
+  margin-left: 10px;
+  margin-right: 50px;
+}
+
+.navbar_signout{
+  border: none;
+  margin-left: 10px;
+  background-color: #b7d3df;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 500px;
+  font-weight: bold;
+  cursor: pointer;
 }
