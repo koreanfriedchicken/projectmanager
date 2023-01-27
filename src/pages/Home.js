@@ -2,10 +2,10 @@ import Grid from "../components/Grid"
 
 import './Home.css'
 
-const Home = () => {
+const Home = ({ search }) => {
   return (
     <div className='home'>
-      <Grid />
+      <Grid search={search}/>
     </div>
   )
 }

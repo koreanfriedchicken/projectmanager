@@ -3,7 +3,7 @@ import { useLogout } from '../hooks/useLogout'
 
 import './Navbar.css'
 
-const Navbar = () => {
+const Navbar = ({ setSearch }) => {
 
   const { user } = useAuthContext()
   const { logout } = useLogout()
@@ -17,7 +17,7 @@ const Navbar = () => {
           <div className='navbar_top'>
             <div className='navbar_left'>
               <div>My Projects</div>
-              <input></input>
+              <input onChange={(e) => setSearch(e.target.value)}></input>
             </div>
             <div className='navbar_right'>
               <div className='navbar_user'>Welcome {user.displayName},</div>
