@@ -22,22 +22,22 @@ function App() {
 
   return (
     <div className="App">
-      <BrowserRouter>
+      <HashRouter>
         <div className='dashboard'>
           <Sidebar />
           <div className='dashboard_content'>
             <Navbar setSearch={setSearch}/>
             {authIsReady &&
             <Routes>
-              <Route path='/projectmanager' element={user ? <Home search={search}/> : <Navigate to='/signup' />} />
-              <Route path='signup' element={!user ? <SignUp /> : <Navigate to='/' />} />
-              <Route path='signin' element={!user ? <SignIn /> : <Navigate to='/'/>} />
-              <Route path='create' element={!user ? <SignUp /> : <Create />} />
+              <Route path='/' element={user ? <Home search={search}/> : <Navigate to='/signup' />} />
+              <Route path='/signup' element={!user ? <SignUp /> : <Navigate to='/' />} />
+              <Route path='/signin' element={!user ? <SignIn /> : <Navigate to='/'/>} />
+              <Route path='/create' element={!user ? <SignUp /> : <Create />} />
             </Routes>
             }
           </div>
         </div>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
